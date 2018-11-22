@@ -149,7 +149,7 @@ if (isset($_POST['res'])) {
             });
         </script> 
         <?php
-        if ($_POST['pwToRemove'] == 'qw12eridkfa') {
+        if ($_POST['pwToRemove'] == '') {
             $sql_query = mysqli_query($conn, "delete from registo where id=" . $_GET['delete'] . ";");
             ?> <script> alert('Registo removido com sucesso!')
                         window.location = 'index.php'</script> <?php
